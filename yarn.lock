@@ -151,10 +151,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@candypay/checkout-sdk@0.1.30":
-  version "0.1.30"
-  resolved "https://registry.yarnpkg.com/@candypay/checkout-sdk/-/checkout-sdk-0.1.30.tgz#60a46b2f14dbbd3cad542b985e05903f7934634a"
-  integrity sha512-6Zpjj3UMWA03ytiQjm4/kW43PKYkUkM7qpKBPD1K/ElO1hZUI7sAKF1Wd/Xl7nzxYL7P7sWc/Eu9AbVmkCU7xg==
+"@candypay/checkout-sdk@0.1.33":
+  version "0.1.33"
+  resolved "https://registry.yarnpkg.com/@candypay/checkout-sdk/-/checkout-sdk-0.1.33.tgz#97a727358c621160633f4d2ba24c6996cd4fa508"
+  integrity sha512-npechlAxW7hKUvsfkOch/+85ciI4lHER5odEy5VM4v34btawyQksDtzSFnb7dL/aCI+NU+k0Bds3dtWqdcMCgg==
   dependencies:
     "@types/node" "18.7.18"
     axios "^0.27.2"

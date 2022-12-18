@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ayshptk/msngr": "^0.1.2",
-    "@candypay/checkout-sdk": "0.1.30",
+    "@candypay/checkout-sdk": "0.1.33",
     "@candypay/react-checkout-pos": "^0.0.1",
     "@candypay/react-checkout-sdk": "0.1.2",
     "@headlessui/react": "^1.7.3",
