@@ -6,37 +6,21 @@ const Home: NextPage = () => {
   const products = [
     {
       id: 1,
-      name: "FWD Tee",
-      href: "#",
-      price: 0.02,
-      color: "Eagle Black",
+      name: "Non-Secrets of a Successful Presentation",
+      price: 30,
       imageSrc:
-        "https://res.cloudinary.com/dtzqgftjk/image/upload/v1668956691/Screenshot_2022-11-20_203304_mibz2y.png",
+        "https://res.cloudinary.com/dtzqgftjk/image/upload/v1671568146/Screenshot_2022-12-21_015850_jexciy.png",
       imageAlt:
-        "Front of tote bag with washed black canvas body, black straps, and tan leather handles and accents.",
+        "Non-Secrets of a Successful Presentation",
     },
     {
       id: 2,
-      name: "FWD Hoodie",
-      href: "#",
-      price: 0.03,
-      color: "Washed Black",
+      name: "Story Tells master-class",
+      price: 30,
       imageSrc:
-        "https://res.cloudinary.com/dtzqgftjk/image/upload/v1668956686/Screenshot_2022-11-20_203344_m9kb6e.png",
+        "https://res.cloudinary.com/dtzqgftjk/image/upload/v1671568180/Screenshot_2022-12-21_015924_hxfgdr.png",
       imageAlt:
-        "Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.",
-    },
-    {
-      id: 3,
-      name: "Throwback Hip Bag",
-      href: "#",
-      color: "Salmon",
-      price: 0.04,
-      quantity: 1,
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg",
-      imageAlt:
-        "Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.",
+        "Story Tells master-class",
     },
   ];
   const router = useRouter();
@@ -45,10 +29,10 @@ const Home: NextPage = () => {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl overflow-hidden py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="flex flex-col text-center w-full mb-20">
-      <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Our latest demo products</h2>
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Pay with Solana, USDC and what not!</h1>
+      <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Introducing our latest master classes</h2>
+      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Buy with USDC and get a discount!</h1>
     </div>
-          <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
+          <div className="grid  mx-auto gap-y-10 gap-x-30 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
             {products.map((product) => (
               <div
                 onClick={() => {
@@ -67,7 +51,6 @@ const Home: NextPage = () => {
                 <h3 className="mt-4 font-medium text-gray-900">
                   {product.name}
                 </h3>
-                <p className="italic text-gray-500">{product.color}</p>
                 <p className="mt-2 font-medium text-gray-900">
                   $ {product.price}
                 </p>

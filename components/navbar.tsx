@@ -36,17 +36,17 @@ export default function Navbar() {
                   <div className="flex flex-shrink-0 items-center">
                     <img
                       className="block h-8 w-auto rounded-full lg:hidden"
-                      src="https://static8.depositphotos.com/1472772/963/i/950/depositphotos_9632509-stock-photo-red-candy.jpg"
-                      alt="Your Company"
+                      src="https://res.cloudinary.com/dtzqgftjk/image/upload/v1671567907/Screenshot_2022-12-21_015455_eqn6eo.png"
+                      alt="Corp Hacker"
                     />
                     <img
                       className="hidden h-8 w-auto rounded-full lg:block"
-                      src="https://static8.depositphotos.com/1472772/963/i/950/depositphotos_9632509-stock-photo-red-candy.jpg"
-                      alt="Your Company"
+                      src="https://res.cloudinary.com/dtzqgftjk/image/upload/v1671567907/Screenshot_2022-12-21_015455_eqn6eo.png"
+                      alt="Corp Hacker"
                     />
                   </div>
                   <div className="inline-flex items-center pl-4 pt-1 text-xl font-bold text-gray-900">
-                    Candy Store
+                  Corp Hacker
                   </div>
                   <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                     <button

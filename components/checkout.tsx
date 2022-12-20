@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { CheckoutButton } from "@candypay/react-checkout-pos";
+import { CheckoutButton } from "@candypay/react-checkout-sdk";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import axios from "axios";
@@ -9,7 +9,6 @@ interface Product {
   id: number;
   name: string;
   href: string;
-  color: string;
   price: number;
   quantity: number;
   image: string;
@@ -74,7 +73,7 @@ export const Checkout = ({ open, setOpen, products }: Props) => {
                       <div className="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
                         <div className="flex items-start justify-between">
                           <Dialog.Title className="text-lg font-medium text-gray-900">
-                            Shopping cart
+                            Your cart
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button
@@ -116,26 +115,10 @@ export const Checkout = ({ open, setOpen, products }: Props) => {
                                           </a>
                                         </h3>
                                         <div className="ml-4 text-gray-500">
-                                          ${product.price} /item
+                                          ${product.price}
                                         </div>
                                       </div>
-                                      <p className="mt-1 text-sm text-gray-500">
-                                        {product.color}
-                                      </p>
-                                    </div>
-                                    <div className="flex flex-1 items-end justify-between text-sm">
-                                      <p className="text-gray-500">
-                                        Qty {product.quantity}
-                                      </p>
 
-                                      <div className="flex">
-                                        <button
-                                          type="button"
-                                          className="font-medium text-indigo-600 hover:text-indigo-500"
-                                        >
-                                          Remove
-                                        </button>
-                                      </div>
                                     </div>
                                   </div>
                                 </li>
