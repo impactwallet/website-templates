@@ -22,6 +22,15 @@ const Home: NextPage = () => {
       imageAlt:
         "Story Tells master-class",
     },
+    {
+      id: 3,
+      name: "The Network",
+      price: 30,
+      imageSrc:
+        "https://res.cloudinary.com/dtzqgftjk/image/upload/v1671573010/Screenshot_2022-12-21_031958_jsw9nm.png",
+      imageAlt:
+        "The Network",
+    },
   ];
   const router = useRouter();
   return (

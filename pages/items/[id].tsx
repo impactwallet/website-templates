@@ -42,6 +42,19 @@ const products = [
     Story Tells is a Master Class that will teach you how to influence people. Yes, you know the answer - by telling stories. It's that simple. Yet great storytelling can be intimidating. Story Tells teaches you the structure and secrets that allow telling the right story in the right business context.
 `
   },
+  {
+    name: "The Network",
+    price: 30,
+    images:
+    {
+      id: 1,
+      src: "https://res.cloudinary.com/dtzqgftjk/image/upload/v1671573010/Screenshot_2022-12-21_031958_jsw9nm.png",
+      alt: "The Network",
+    },
+    description: `
+    The richest people in the world build networks; everyone else is trained to look for work. But we all know that any issue we have could be solved by someone. It is our duty to find that person, engage with them and make sure they want to stay by us. That is exactly what the Network Master Class is about.
+`
+  },
 ];
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
