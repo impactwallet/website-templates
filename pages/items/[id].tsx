@@ -18,7 +18,7 @@ import { ProductContext } from "../_app";
 const products = [
   {
     name: "Non-Secrets of a Successful Presentation",
-    price: 0.03,
+    price: 30,
     images:
     {
       id: 1,
