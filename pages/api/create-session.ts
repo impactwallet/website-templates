@@ -12,6 +12,14 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         cancel_url: "https://corphacker.vercel.app/",
         tokens: [ "dust", "shdw"],
         items: items,
+        discounts: {
+          verified_creator_address:
+            "EvAULQeoenFCfLGC4zNDWdKgadjXcEhz3srRBf9yY1Nz",
+          discount: 0.5,
+          name: "Corp Hacker",
+          image:
+            "https://i.ibb.co/Fb9hZRf/image.png",
+        },
       });
 
       return res.status(200).json(response);
