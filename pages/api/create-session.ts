@@ -13,7 +13,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         tokens: [ "dust", "shdw"],
         items: items,
         discounts: {
-          verified_creator_address:
+          collection_id:
             "EvAULQeoenFCfLGC4zNDWdKgadjXcEhz3srRBf9yY1Nz",
           discount: 0.5,
           name: "Corp Hacker",

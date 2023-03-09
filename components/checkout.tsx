@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { CheckoutButton } from "@candypay/react-checkout-sdk";
+import { useRouter } from "next/router";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import axios from "axios";
 import { Dispatch, Fragment, SetStateAction, useEffect, useState } from "react";
+import { Button } from "@chakra-ui/react"
 
 interface Product {
   id: number;
@@ -22,12 +23,15 @@ interface Props {
 }
 
 export const Checkout = ({ open, setOpen, products }: Props) => {
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
   const [total, setTotal] = useState<number>(0);
   const createSessionOnDevnet = async () => {
+    setIsLoading(true);
     const { data } = await axios.post("/api/create-session", {
       items: products,
     });
-    return data.session_id;
+    router.push(data.payment_url);
   };
   useEffect(() => {
     const price = getPrice(products);
@@ -133,13 +137,14 @@ export const Checkout = ({ open, setOpen, products }: Props) => {
                           <p>Subtotal</p>
                           <p>${total}</p>
                         </div>
-
-                        <CheckoutButton
-                          handleSession={createSessionOnDevnet}
-                          className="!w-full !h-10"
+                        <Button
+                          isLoading={isLoading}
+                          onClick={createSessionOnDevnet}
+                          colorScheme="brand"
+                          w="full"
                         >
                           Checkout
-                        </CheckoutButton>
+                        </Button>
                         <div className="mt-6 flex justify-center text-center text-sm text-gray-500"></div>
                       </div>
                     </div>

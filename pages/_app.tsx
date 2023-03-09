@@ -1,23 +1,33 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { CandyPayProvider } from "@candypay/react-checkout-sdk";
 import { createContext, useState } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import { ChakraProvider } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react'
+
 export const ProductContext = createContext<any>(null);
+
+const theme = extendTheme({
+  colors: {
+    brand: {
+      500: "#4F46E5",
+    }
+  }
+});
+
+
 function MyApp({ Component, pageProps }: AppProps) {
   const [prod, setProd] = useState<any[]>([]);
   return (
     <>
-      <ProductContext.Provider value={{ prod, setProd }}>
-        <CandyPayProvider
-          publicApiKey={process.env.NEXT_PUBLIC_CANDYPAY_PUBLIC_API_KEY!}
-        >
+      <ChakraProvider theme={theme}>
+        <ProductContext.Provider value={{ prod, setProd }}>
           <Navbar />
           <Component {...pageProps} />
           <Footer />
-        </CandyPayProvider>
-      </ProductContext.Provider>
+        </ProductContext.Provider>
+      </ChakraProvider>
     </>
   );
 }
