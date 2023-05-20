@@ -6,40 +6,21 @@ const Home: NextPage = () => {
   const products = [
     {
       id: 1,
-      name: "Non-Secrets of a Successful Presentation",
-      price: 30,
+      name: "The Book",
+      price: 10,
       imageSrc:
-        "https://res.cloudinary.com/dtzqgftjk/image/upload/v1671568146/Screenshot_2022-12-21_015850_jexciy.png",
+        "https://i.ibb.co/r2gmzxj/image.png",
       imageAlt:
-        "Non-Secrets of a Successful Presentation",
-    },
-    {
-      id: 2,
-      name: "Story Tells master-class",
-      price: 30,
-      imageSrc:
-        "https://res.cloudinary.com/dtzqgftjk/image/upload/v1671568180/Screenshot_2022-12-21_015924_hxfgdr.png",
-      imageAlt:
-        "Story Tells master-class",
-    },
-    {
-      id: 3,
-      name: "The Network",
-      price: 30,
-      imageSrc:
-        "https://res.cloudinary.com/dtzqgftjk/image/upload/v1671573010/Screenshot_2022-12-21_031958_jsw9nm.png",
-      imageAlt:
-        "The Network",
+        "The Book",
     },
   ];
   const router = useRouter();
   return (
     <>
       <div className="bg-white">
-        <div className="mx-auto max-w-7xl overflow-hidden py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <div className="flex flex-col text-center w-full mb-20">
-      <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Introducing our latest master classes</h2>
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Buy with USDC and get a discount!</h1>
+        <div className="mx-auto max-w-7xl overflow-hidden py-8 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="flex flex-col text-center w-full mb-8">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Welcome to our store! Thanks for choosing us!</h1>
     </div>
           <div className="grid  mx-auto gap-y-10 gap-x-30 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
             {products.map((product) => (

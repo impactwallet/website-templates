@@ -10,16 +10,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       const response = await candypay.session.create({
         success_url: "https://corphacker.vercel.app/success",
         cancel_url: "https://corphacker.vercel.app/",
-        tokens: [ "dust", "shdw"],
+        tokens: [ "samo", "bonk"],
         items: items,
-        discounts: {
-          collection_id:
-            "EvAULQeoenFCfLGC4zNDWdKgadjXcEhz3srRBf9yY1Nz",
-          discount: 0.5,
-          name: "Corp Hacker",
-          image:
-            "https://i.ibb.co/Fb9hZRf/image.png",
-        },
       });
 
       return res.status(200).json(response);
