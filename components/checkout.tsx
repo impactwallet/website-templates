@@ -31,7 +31,7 @@ export const Checkout = ({ open, setOpen, products }: Props) => {
     const { data } = await axios.post("/api/create-session", {
       items: products,
     });
-    router.push(data.payment_url);
+    router.push(data.payment_url.replace('checkout', 'pos'));
   };
   useEffect(() => {
     const price = getPrice(products);
