@@ -10,8 +10,12 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       const response = await candypay.session.create({
         success_url: "https://thebookstore-orcin.vercel.app/success",
         cancel_url: "https://thebookstore-orcin.vercel.app/",
-        tokens: [],
         items: items,
+        custom_data: {
+          name: items[0].name,
+          image: items[0].image,
+          wallet_address: process.env.RECEIVER_WALLET,
+        },
       });
 
       return res.status(200).json(response);
