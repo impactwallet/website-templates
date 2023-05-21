@@ -8,9 +8,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     try {
       const response = await candypay.session.create({
-        success_url: "https://corphacker.vercel.app/success",
-        cancel_url: "https://corphacker.vercel.app/",
-        tokens: [ "samo", "bonk"],
+        success_url: "https://thebookstore-orcin.vercel.app/success",
+        cancel_url: "https://thebookstore-orcin.vercel.app/",
+        tokens: [],
         items: items,
       });
 
