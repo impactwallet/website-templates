@@ -25,6 +25,7 @@ const products = [
       src: "https://i.ibb.co/r2gmzxj/image.png",
       alt: "The Book",
     },
+    wallet: "37ZnwAwMShAuFJB6Fahu1TmY6fpb9xAZ6bJKiA38Xnx5",
   },
 ];
 function classNames(...classes: any[]) {
@@ -38,6 +39,7 @@ interface Product {
   quantity: number;
   image: string;
   imageAlt: string;
+  wallet: string;
 }
 
 const Item = () => {
@@ -82,6 +84,10 @@ const Item = () => {
                   <h2 className="sr-only">Product information</h2>
                   <p className="text-3xl pb-5 tracking-tight text-gray-900">
                     $ {product?.price}
+                  </p>
+                  <p className="pb-5 tracking-tight text-gray-900">
+                    Solana Wallet</br>
+                    {product?.wallet}
                   </p>
                 </div>
                 <div className="sm:flex-col1 mt-10 flex">
