@@ -14,6 +14,7 @@ interface Product {
   quantity: number;
   image: string;
   imageAlt: string;
+  wallet: string;
 }
 
 interface Props {
