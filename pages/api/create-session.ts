@@ -14,7 +14,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         custom_data: {
           name: items[0].name,
           image: items[0].image,
-          wallet_address: process.env.RECEIVER_WALLET!,
+          wallet_address: items[0].wallet,
         },
       });
 
