@@ -100,7 +100,8 @@ const Item = () => {
                           name: product?.name,
                           image: product.images.src,
                           price: product.price,
-                          quantity: 1
+                          quantity: 1,
+                          wallet: product?.wallet,
                         },
                       ]);
                       setOpen(true);
