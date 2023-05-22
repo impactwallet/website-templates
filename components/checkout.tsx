@@ -32,7 +32,7 @@ export const Checkout = ({ open, setOpen, products }: Props) => {
     setIsLoading(true);
     const { data } = await axios.post(`https://impact-wallet.herokuapp.com/orgs/${products[0].orgId}/payments/receive`, {
       item: products[0].name,
-      price: products[0].price,
+      amount: products[0].price,
     });
     router.push(data.cpPaymentUrl.replace('checkout', 'pos'));
   };
