@@ -25,6 +25,7 @@ const products = [
       src: "https://i.ibb.co/r2gmzxj/image.png",
       alt: "The Book",
     },
+    orgId: "646669d9f6e214cd84c4453e",
     wallet: "37ZnwAwMShAuFJB6Fahu1TmY6fpb9xAZ6bJKiA38Xnx5",
   },
 ];
@@ -40,6 +41,7 @@ interface Product {
   image: string;
   imageAlt: string;
   wallet: string;
+  orgId: string;
 }
 
 const Item = () => {
