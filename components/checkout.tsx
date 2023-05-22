@@ -29,10 +29,10 @@ export const Checkout = ({ open, setOpen, products }: Props) => {
   const [total, setTotal] = useState<number>(0);
   const createSessionOnDevnet = async () => {
     setIsLoading(true);
-    const { data } = await axios.post("/api/create-session", {
+    const { data } = await axios.post(`/orgs/${products[0].orgId}/payments/receive`, {
       items: products,
     });
-    router.push(data.payment_url.replace('checkout', 'pos'));
+    router.push(data.cpPaymentUrl.replace('checkout', 'pos'));
   };
   useEffect(() => {
     const price = getPrice(products);
