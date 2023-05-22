@@ -86,7 +86,7 @@ const Item = () => {
                     $ {product?.price}
                   </p>
                   <p className="pb-5 tracking-tight text-gray-900">
-                    Solana Wallet</br>
+                    Solana Wallet<br/>
                     {product?.wallet}
                   </p>
                 </div>
