@@ -103,6 +103,7 @@ const Item = () => {
                           image: product.images.src,
                           price: product.price,
                           quantity: 1,
+                          orgId: product?.orgId,
                           wallet: product?.wallet,
                         },
                       ]);
