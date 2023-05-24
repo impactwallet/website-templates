@@ -17,13 +17,13 @@ import { Checkout } from "../../components/checkout";
 import { ProductContext } from "../_app";
 const products = [
   {
-    name: "The Book",
+    name: "Early Bird Ticket",
     price: 10,
     images:
     {
       id: 1,
-      src: "https://i.ibb.co/r2gmzxj/image.png",
-      alt: "The Book",
+      src: "https://i.ibb.co/f1dLJ9S/photo1684875169.jpg",
+      alt: "Early Bird Ticket",
     },
     orgId: "646669d9f6e214cd84c4453e",
     wallet: "37ZnwAwMShAuFJB6Fahu1TmY6fpb9xAZ6bJKiA38Xnx5",
