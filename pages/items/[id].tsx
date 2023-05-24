@@ -25,8 +25,8 @@ const products = [
       src: "https://i.ibb.co/f1dLJ9S/photo1684875169.jpg",
       alt: "Early Bird Ticket",
     },
-    orgId: "646669d9f6e214cd84c4453e",
-    wallet: "37ZnwAwMShAuFJB6Fahu1TmY6fpb9xAZ6bJKiA38Xnx5",
+    orgId: "646e381fd7f75a797f25a5e5",
+    wallet: "HwhQiztGqxtmBRTagGAawysCxEXC2ji5nQxKSEgRRBQ5",
   },
 ];
 function classNames(...classes: any[]) {
