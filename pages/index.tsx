@@ -6,12 +6,12 @@ const Home: NextPage = () => {
   const products = [
     {
       id: 1,
-      name: "The Book",
+      name: "Early Bird Ticket",
       price: 10,
       imageSrc:
-        "https://i.ibb.co/r2gmzxj/image.png",
+        "https://i.ibb.co/f1dLJ9S/photo1684875169.jpg",
       imageAlt:
-        "The Book",
+        "Early Bird Ticket",
     },
   ];
   const router = useRouter();
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl overflow-hidden py-8 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="flex flex-col text-center w-full mb-8">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Welcome to our store! Thanks for choosing us!</h1>
+      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Buy your ticket today to save $90!</h1>
     </div>
           <div className="grid  mx-auto gap-y-10 gap-x-30 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
             {products.map((product) => (
