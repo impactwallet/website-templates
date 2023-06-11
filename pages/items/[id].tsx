@@ -26,7 +26,7 @@ const products = [
       alt: "Early Bird Ticket",
     },
     orgId: "64832a2c3aac41df622d92de",
-    wallet: "GQ1qupTKbcoXhftHZB2LVSP7YENwTbaAQ1thFkF83ghT",
+    wallet: "CQo1KK1XdLSJNRNQSZ8m5fWFaSMD4Zp4DsqDbrSduzPf",
   },
 ];
 function classNames(...classes: any[]) {
