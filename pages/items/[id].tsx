@@ -25,7 +25,7 @@ const products = [
       src: "https://i.ibb.co/f1dLJ9S/photo1684875169.jpg",
       alt: "Early Bird Ticket",
     },
-    orgId: "64832a2c3aac41df622d92de",
+    orgId: "648608fd0e2de5267a9d4eae",
     wallet: "CQo1KK1XdLSJNRNQSZ8m5fWFaSMD4Zp4DsqDbrSduzPf",
   },
 ];
