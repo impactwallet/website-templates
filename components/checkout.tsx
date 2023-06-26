@@ -34,6 +34,7 @@ export const Checkout = ({ open, setOpen, products }: Props) => {
       items: products.map(product => ({
         name: product.name,
         amount: product.price,
+        image: product.image,
       }))
     });
     router.push(data.cpPaymentUrl.replace('checkout', 'pos'));
