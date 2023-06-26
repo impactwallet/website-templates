@@ -17,16 +17,58 @@ import { Checkout } from "../../components/checkout";
 import { ProductContext } from "../_app";
 const products = [
   {
-    name: "Early Bird Ticket",
+    id: 1,
     price: 10,
-    images:
-    {
-      id: 1,
-      src: "https://i.ibb.co/f1dLJ9S/photo1684875169.jpg",
-      alt: "Early Bird Ticket",
-    },
     orgId: "648608fd0e2de5267a9d4eae",
     wallet: "CQo1KK1XdLSJNRNQSZ8m5fWFaSMD4Zp4DsqDbrSduzPf",
+    name: "Rosemary & Rhubarb",
+    imageSrc: "https://i.ibb.co/cgh9kLW/photo1687716388.jpg",
+    imageAlt: "Rosemary & Rhubarb",
+  },
+  {
+    id: 2,
+    name: "Christmas Punch",
+    price: 10,
+    imageSrc:
+      "https://i.ibb.co/fSHCrZL/photo1687716407.jpg",
+    imageAlt:
+      "Christmas Punch",
+  },
+  {
+    id: 3,
+    name: "Eau de Lavender",
+    price: 10,
+    imageSrc:
+      "https://i.ibb.co/WWS3QmM/photo1687716450.jpg",
+    imageAlt:
+      "Eau de Lavender",
+  },
+  {
+    id: 4,
+    name: "Rhubarb Fix",
+    price: 10,
+    imageSrc:
+      "https://i.ibb.co/yNjYrQh/photo1687716464.jpg",
+    imageAlt:
+      "Rhubarb Fix",
+  },
+  {
+    id: 5,
+    name: "Butter & Smoke",
+    price: 10,
+    imageSrc:
+      "https://i.ibb.co/8NgnzMr/photo1687716675.jpg",
+    imageAlt:
+      "Butter & Smoke",
+  },
+  {
+    id: 6,
+    name: "Cucumber & Rose Collins",
+    price: 10,
+    imageSrc:
+      "https://i.ibb.co/pRPDgr0/photo1687717575.jpg",
+    imageAlt:
+      "Cucumber & Rose Collins",
   },
 ];
 function classNames(...classes: any[]) {
@@ -100,7 +142,7 @@ const Item = () => {
                         {
                           id: parseInt(router.query.id as string) - 1,
                           name: product?.name,
-                          image: product.images.src,
+                          image: product.imageSrc,
                           price: product.price,
                           quantity: 1,
                           orgId: product?.orgId,
