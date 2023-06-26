@@ -108,8 +108,8 @@ const Item = () => {
                 <Tab.Panels className="aspect-w-1 aspect-h-1 w-full">
                   <Tab.Panel>
                     <img
-                      src={product?.images.src}
-                      alt={product?.images.alt}
+                      src={product?.imageSrc}
+                      alt={product?.imageAlt}
                       className="h-full w-full object-cover object-center sm:rounded-lg"
                     />
                   </Tab.Panel>
