@@ -19,8 +19,8 @@ const products = [
   {
     id: 1,
     price: 10,
-    orgId: "648608fd0e2de5267a9d4eae",
-    wallet: "CQo1KK1XdLSJNRNQSZ8m5fWFaSMD4Zp4DsqDbrSduzPf",
+    orgId: "649972ee05c1f5be86c5e86c",
+    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
     name: "Rosemary & Rhubarb",
     imageSrc: "https://i.ibb.co/cgh9kLW/photo1687716388.jpg",
     imageAlt: "Rosemary & Rhubarb",
@@ -33,6 +33,8 @@ const products = [
       "https://i.ibb.co/fSHCrZL/photo1687716407.jpg",
     imageAlt:
       "Christmas Punch",
+    orgId: "649972ee05c1f5be86c5e86c",
+    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
   },
   {
     id: 3,
@@ -42,6 +44,8 @@ const products = [
       "https://i.ibb.co/WWS3QmM/photo1687716450.jpg",
     imageAlt:
       "Eau de Lavender",
+    orgId: "649972ee05c1f5be86c5e86c",
+    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
   },
   {
     id: 4,
@@ -51,6 +55,8 @@ const products = [
       "https://i.ibb.co/yNjYrQh/photo1687716464.jpg",
     imageAlt:
       "Rhubarb Fix",
+    orgId: "649972ee05c1f5be86c5e86c",
+    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
   },
   {
     id: 5,
@@ -60,6 +66,8 @@ const products = [
       "https://i.ibb.co/8NgnzMr/photo1687716675.jpg",
     imageAlt:
       "Butter & Smoke",
+    orgId: "649972ee05c1f5be86c5e86c",
+    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
   },
   {
     id: 6,
@@ -69,6 +77,8 @@ const products = [
       "https://i.ibb.co/pRPDgr0/photo1687717575.jpg",
     imageAlt:
       "Cucumber & Rose Collins",
+    orgId: "649972ee05c1f5be86c5e86c",
+    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
   },
 ];
 function classNames(...classes: any[]) {
