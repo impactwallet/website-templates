@@ -16,39 +16,39 @@ import {
 import { Checkout } from "../../components/checkout";
 import { ProductContext } from "../_app";
 const products = [
-  {
-    id: 1,
-    name: "Early Bird Ticket",
-    price: 1,
-    imageSrc:
-      "https://i.ibb.co/L1WjbYz/photo1688015723.jpg",
-    imageAlt:
-      "Early Bird Ticket",
-    orgId: "649d11a734fc46d9b33c79c2",
-    wallet: "4nL4diPhvp4eK7XLZxtGtt2UUTE3KL3aCve67Sf6fJWp",
-  },
-  {
-    id: 2,
-    name: "Student Ticket",
-    price: 10,
-    imageSrc:
-      "https://i.ibb.co/5WDQ0bT/photo1688015769.jpg",
-    imageAlt:
-      "Student Ticket",
-    orgId: "649d11a734fc46d9b33c79c2",
-    wallet: "4nL4diPhvp4eK7XLZxtGtt2UUTE3KL3aCve67Sf6fJWp",
-  },
-  {
-    id: 3,
-    name: "V.I.P. Ticket",
-    price: 50,
-    imageSrc:
-      "https://i.ibb.co/JcLWCZQ/photo1688015778.jpg",
-    imageAlt:
-      "V.I.P. Ticket",
-    orgId: "649d11a734fc46d9b33c79c2",
-    wallet: "4nL4diPhvp4eK7XLZxtGtt2UUTE3KL3aCve67Sf6fJWp",
-  },
+    {
+      id: 1,
+      name: "Template #1",
+      price: 10,
+      imageSrc:
+        "https://i.ibb.co/6NjbpdS/photo1688019108.jpg",
+      imageAlt:
+        "Template #1",
+      orgId: "649d176134fc46d9b33c7a51",
+      wallet: "GKMFEbbJeBeLG8jHzZVYLA9GWLa3gGTuyG4q7rumdGfW",
+    },
+    {
+      id: 2,
+      name: "Template #2",
+      price: 10,
+      imageSrc:
+        "https://i.ibb.co/y0dzmpp/photo1688019200.jpg",
+      imageAlt:
+        "Template #2",
+      orgId: "649d176134fc46d9b33c7a51",
+      wallet: "GKMFEbbJeBeLG8jHzZVYLA9GWLa3gGTuyG4q7rumdGfW",
+    },
+    {
+      id: 3,
+      name: "Template #3",
+      price: 10,
+      imageSrc:
+        "https://i.ibb.co/2hryygd/photo1688019254.jpg",
+      imageAlt:
+        "Template #3",
+      orgId: "649d176134fc46d9b33c7a51",
+      wallet: "GKMFEbbJeBeLG8jHzZVYLA9GWLa3gGTuyG4q7rumdGfW",
+    },
 ];
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
