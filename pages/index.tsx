@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   const products = [
     {
       id: 1,
-      name: "Website Template #1",
+      name: "Template #1",
       price: 10,
       imageSrc:
         "https://i.ibb.co/6NjbpdS/photo1688019108.jpg",
