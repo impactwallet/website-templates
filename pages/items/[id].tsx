@@ -18,67 +18,36 @@ import { ProductContext } from "../_app";
 const products = [
   {
     id: 1,
-    price: 10,
-    orgId: "649972ee05c1f5be86c5e86c",
-    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
-    name: "Rosemary & Rhubarb",
-    imageSrc: "https://i.ibb.co/cgh9kLW/photo1687716388.jpg",
-    imageAlt: "Rosemary & Rhubarb",
+    name: "Early Bird Ticket",
+    price: 1,
+    imageSrc:
+      "https://i.ibb.co/L1WjbYz/photo1688015723.jpg",
+    imageAlt:
+      "Early Bird Ticket",
+    orgId: "649d11a734fc46d9b33c79c2",
+    wallet: "4nL4diPhvp4eK7XLZxtGtt2UUTE3KL3aCve67Sf6fJWp",
   },
   {
     id: 2,
-    name: "Christmas Punch",
+    name: "Student Ticket",
     price: 10,
     imageSrc:
-      "https://i.ibb.co/fSHCrZL/photo1687716407.jpg",
+      "https://i.ibb.co/5WDQ0bT/photo1688015769.jpg",
     imageAlt:
-      "Christmas Punch",
-    orgId: "649972ee05c1f5be86c5e86c",
-    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
+      "Student Ticket",
+    orgId: "649d11a734fc46d9b33c79c2",
+    wallet: "4nL4diPhvp4eK7XLZxtGtt2UUTE3KL3aCve67Sf6fJWp",
   },
   {
     id: 3,
-    name: "Eau de Lavender",
-    price: 10,
+    name: "V.I.P. Ticket",
+    price: 50,
     imageSrc:
-      "https://i.ibb.co/WWS3QmM/photo1687716450.jpg",
+      "https://i.ibb.co/JcLWCZQ/photo1688015778.jpg",
     imageAlt:
-      "Eau de Lavender",
-    orgId: "649972ee05c1f5be86c5e86c",
-    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
-  },
-  {
-    id: 4,
-    name: "Rhubarb Fix",
-    price: 10,
-    imageSrc:
-      "https://i.ibb.co/yNjYrQh/photo1687716464.jpg",
-    imageAlt:
-      "Rhubarb Fix",
-    orgId: "649972ee05c1f5be86c5e86c",
-    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
-  },
-  {
-    id: 5,
-    name: "Butter & Smoke",
-    price: 10,
-    imageSrc:
-      "https://i.ibb.co/8NgnzMr/photo1687716675.jpg",
-    imageAlt:
-      "Butter & Smoke",
-    orgId: "649972ee05c1f5be86c5e86c",
-    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
-  },
-  {
-    id: 6,
-    name: "Cucumber & Rose Collins",
-    price: 10,
-    imageSrc:
-      "https://i.ibb.co/pRPDgr0/photo1687717575.jpg",
-    imageAlt:
-      "Cucumber & Rose Collins",
-    orgId: "649972ee05c1f5be86c5e86c",
-    wallet: "fZRx7XZb22rEFNCrD8rnAoFHkNDvXV6p1mSPadusUQR",
+      "V.I.P. Ticket",
+    orgId: "649d11a734fc46d9b33c79c2",
+    wallet: "4nL4diPhvp4eK7XLZxtGtt2UUTE3KL3aCve67Sf6fJWp",
   },
 ];
 function classNames(...classes: any[]) {
