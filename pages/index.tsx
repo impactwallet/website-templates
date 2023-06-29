@@ -6,30 +6,30 @@ const Home: NextPage = () => {
   const products = [
     {
       id: 1,
-      name: "Early Bird Ticket",
-      price: 1,
+      name: "Website Template #1",
+      price: 10,
       imageSrc:
-        "https://i.ibb.co/L1WjbYz/photo1688015723.jpg",
+        "https://i.ibb.co/6NjbpdS/photo1688019108.jpg",
       imageAlt:
-        "Early Bird Ticket",
+        "Template #1",
     },
     {
       id: 2,
-      name: "Student Ticket",
+      name: "Template #2",
       price: 10,
       imageSrc:
-        "https://i.ibb.co/5WDQ0bT/photo1688015769.jpg",
+        "https://i.ibb.co/y0dzmpp/photo1688019200.jpg",
       imageAlt:
-        "Student Ticket",
+        "Template #2",
     },
     {
       id: 3,
-      name: "V.I.P. Ticket",
-      price: 50,
+      name: "Template #3",
+      price: 10,
       imageSrc:
-        "https://i.ibb.co/JcLWCZQ/photo1688015778.jpg",
+        "https://i.ibb.co/2hryygd/photo1688019254.jpg",
       imageAlt:
-        "V.I.P. Ticket",
+        "Template #3",
     },
   ];
   const router = useRouter();
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl overflow-hidden py-8 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="flex flex-col text-center w-full mb-8">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Get your ticket now to save money!</h1>
+      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Smart website templates for smart money!</h1>
     </div>
           <div className="grid  mx-auto gap-y-10 gap-x-30 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
             {products.map((product) => (
